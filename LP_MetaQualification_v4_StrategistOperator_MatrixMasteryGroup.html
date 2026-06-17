@@ -1,0 +1,2363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a0f">
+  <title>Business Credit for Real Estate Deals | Matrix Mastery Group</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background: #0a0a0f;
+      color: #fff;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    :root {
+      --g: #22B285;
+      --gd: #18926C;
+      --b: #0285FF;
+      --card: rgba(17, 17, 24, 0.82);
+      --border: rgba(34, 178, 133, 0.14);
+      --muted: rgba(255, 255, 255, 0.45);
+      --mid: rgba(255, 255, 255, 0.72);
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(36px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes shimmer {
+      0% {
+        background-position: -200% center;
+      }
+
+      100% {
+        background-position: 200% center;
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 20px rgba(34, 178, 133, .3);
+      }
+
+      50% {
+        box-shadow: 0 0 50px rgba(34, 178, 133, .55), 0 0 80px rgba(34, 178, 133, .2);
+      }
+    }
+
+    @keyframes orbFloat {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      50% {
+        transform: translate(-50%, -50%) scale(1.13);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-13px);
+      }
+    }
+
+    @keyframes arrow {
+
+      0%,
+      70%,
+      100% {
+        transform: translateX(0);
+      }
+
+      80% {
+        transform: translateX(4px);
+      }
+
+      90% {
+        transform: translateX(2px);
+      }
+    }
+
+    @keyframes drawLine {
+      from {
+        transform: scaleX(0);
+      }
+
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    @keyframes progressFill {
+      from {
+        width: 0%;
+      }
+
+      to {
+        width: var(--w);
+      }
+    }
+
+    .fade-u0 {
+      animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) both;
+    }
+
+    .fade-u1 {
+      animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) .14s both;
+    }
+
+    .fade-u2 {
+      animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) .28s both;
+    }
+
+    .fade-u3 {
+      animation: fadeUp .9s cubic-bezier(.16, 1, .3, 1) .42s both;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(36px);
+      transition: opacity .75s cubic-bezier(.16, 1, .3, 1), transform .75s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal.in .rs:nth-child(1) {
+      transition-delay: .05s;
+    }
+
+    .reveal.in .rs:nth-child(2) {
+      transition-delay: .15s;
+    }
+
+    .reveal.in .rs:nth-child(3) {
+      transition-delay: .25s;
+    }
+
+    .reveal.in .rs:nth-child(4) {
+      transition-delay: .35s;
+    }
+
+    .rs {
+      opacity: 0;
+      transform: translateY(28px) scale(.97);
+      transition: opacity .65s cubic-bezier(.16, 1, .3, 1), transform .65s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .reveal.in .rs {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .shimmer-text {
+      background: linear-gradient(90deg, #22B285, #0285FF, #22B285, #0285FF);
+      background-size: 300% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .wrap-sm {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .06), transparent);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+    .hdr {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      background: rgba(10, 10, 15, .96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+    }
+
+    .hdr-logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: -.01em;
+      pointer-events: none;
+    }
+
+    .logo-m {
+      width: 30px;
+      height: 30px;
+      background: linear-gradient(135deg, var(--g), var(--b));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 60px 20px 68px;
+      background: radial-gradient(ellipse at 50% 0%, rgba(34, 178, 133, .07) 0%, transparent 58%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .float-shape {
+      position: absolute;
+      pointer-events: none;
+      opacity: .04;
+    }
+
+    .spin-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgba(34, 178, 133, .07);
+      pointer-events: none;
+      animation: float 30s linear infinite;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 6px 14px;
+      border-radius: 100px;
+      border: 1px solid rgba(34, 178, 133, .3);
+      background: rgba(34, 178, 133, .06);
+      color: var(--g);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .02em;
+      margin-bottom: 22px;
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--g);
+      box-shadow: 0 0 8px var(--g);
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    .hero h1 {
+      font-size: clamp(26px, 4.2vw, 52px);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -.03em;
+      margin-bottom: 18px;
+      text-wrap: balance;
+    }
+
+    .hero-offer {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      letter-spacing: -.01em;
+    }
+
+    .hero-offer strong {
+      color: var(--g);
+      font-weight: 700;
+    }
+
+    .hero-sub {
+      font-size: 17px;
+      line-height: 1.68;
+      color: var(--mid);
+      max-width: 580px;
+      margin: 0 auto 28px;
+    }
+
+    .trust-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 30px;
+    }
+
+    .trust-row strong {
+      color: #fff;
+      font-weight: 600;
+    }
+
+    .t-sep {
+      color: rgba(255, 255, 255, .18);
+    }
+
+    .tp-stars {
+      display: inline-flex;
+      gap: 2px;
+    }
+
+    .tp-stars svg {
+      width: 12px;
+      height: 12px;
+      fill: #00b67a;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      background: linear-gradient(135deg, #22B285, #18926C);
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 17px 34px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      font-family: inherit;
+      text-decoration: none;
+      box-shadow: 0 4px 22px rgba(34, 178, 133, .38);
+      animation: glow 3s ease-in-out infinite;
+      position: relative;
+      overflow: hidden;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .btn::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, .18) 50%, transparent 60%);
+      background-size: 250% 100%;
+      animation: shimmer 3s linear infinite;
+      pointer-events: none;
+    }
+
+    .btn svg {
+      animation: arrow 2.8s ease-in-out infinite;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(34, 178, 133, .48);
+    }
+
+    .btn-sm {
+      font-size: 14px;
+      padding: 13px 24px;
+      border-radius: 12px;
+    }
+
+    .cta-micro {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-top: 11px;
+    }
+
+    .path-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .path-step {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 11.5px;
+      font-weight: 500;
+    }
+
+    .path-step strong {
+      color: rgba(255, 255, 255, .82);
+      font-weight: 600;
+    }
+
+    .path-arrow {
+      color: rgba(34, 178, 133, .5);
+      font-size: 10px;
+    }
+
+    .qualifies-note {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 16px;
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: 11px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .qualifies-note strong {
+      color: var(--mid);
+    }
+
+    /* STATS BAR */
+    .stats-bar {
+      padding: 32px 20px;
+      background: linear-gradient(180deg, rgba(34, 178, 133, .03) 0%, transparent 100%);
+    }
+
+    .stats-grid {
+      max-width: 860px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    @media(max-width:640px) {
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .stat-box {
+      text-align: center;
+    }
+
+    .stat-n {
+      font-size: clamp(24px, 3.5vw, 34px);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      color: var(--g);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-n.white {
+      color: #fff;
+    }
+
+    .stat-l {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* SECTION BASE */
+    .sec {
+      padding: 72px 20px;
+    }
+
+    .sec-alt {
+      background: rgba(255, 255, 255, .016);
+    }
+
+    .sec-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--g);
+      margin-bottom: 10px;
+    }
+
+    .sec-title {
+      font-size: clamp(22px, 3.5vw, 38px);
+      font-weight: 800;
+      line-height: 1.18;
+      letter-spacing: -.025em;
+      margin-bottom: 12px;
+    }
+
+    .sec-sub {
+      font-size: 16px;
+      line-height: 1.72;
+      color: var(--mid);
+      max-width: 620px;
+      margin-bottom: 38px;
+    }
+
+    .sec-head {
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    .sec-head .sec-label {
+      display: block;
+    }
+
+    .sec-head .sec-sub {
+      margin: 0 auto;
+    }
+
+    /* DARK CARD */
+    .dark-card {
+      background: var(--card);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(34, 178, 133, .12);
+      border-radius: 20px;
+      transition: all .4s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .dark-card:hover {
+      border-color: rgba(34, 178, 133, .32);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .3);
+    }
+
+    /* WHO THIS IS FOR */
+    .qualifier-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    @media(max-width:720px) {
+      .qualifier-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+    }
+
+    .qualifier-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 18px;
+      padding: 18px 20px;
+      transition: all .4s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .qualifier-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0, 0, 0, .4);
+    }
+
+    .qualifier-card .left-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 100%;
+      border-radius: 18px 0 0 18px;
+    }
+
+    .qualifier-card .qc-inner {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .qc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .qc-title {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+
+    .qc-sub {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* CASE STUDIES */
+    .case-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media(max-width:720px) {
+      .case-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .case-card {
+      background: var(--card);
+      border: 1px solid rgba(34, 178, 133, .12);
+      border-radius: 20px;
+      padding: 24px;
+      position: relative;
+      overflow: hidden;
+      transition: all .4s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .case-card:hover {
+      border-color: rgba(34, 178, 133, .3);
+      transform: translateY(-4px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, .35);
+    }
+
+    .case-card .card-orb {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 260px;
+      height: 160px;
+      background: radial-gradient(ellipse at 50% 0%, var(--orb-color), transparent 65%);
+      pointer-events: none;
+    }
+
+    .case-amount {
+      text-align: center;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-amount-num {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      line-height: 1;
+    }
+
+    .case-amount-label {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .case-breakdown {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-round {
+      text-align: center;
+      padding: 10px 12px;
+      border-radius: 12px;
+    }
+
+    .case-round-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .case-round-amt {
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .progress-wrap {
+      margin-bottom: 18px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .progress-track {
+      height: 5px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, .05);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      border-radius: 100px;
+      width: 0%;
+      transition: width 1.5s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .case-video {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .08);
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+      background: #111;
+      aspect-ratio: 16/9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .case-video-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .play-btn {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: rgba(34, 178, 133, .15);
+      border: 1px solid rgba(34, 178, 133, .3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .case-quote {
+      font-size: 12.5px;
+      color: rgba(255, 255, 255, .55);
+      line-height: 1.65;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-person {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .case-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    .case-name {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .case-meta {
+      font-size: 11.5px;
+      color: var(--muted);
+    }
+
+    .ftc {
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, .2);
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* MID-PAGE CTA */
+    .mid-cta-box {
+      position: relative;
+      overflow: hidden;
+      border-radius: 22px;
+      padding: 44px 32px;
+      text-align: center;
+      background: linear-gradient(135deg, rgba(34, 178, 133, .08), rgba(2, 133, 255, .06));
+      border: 1px solid rgba(34, 178, 133, .2);
+    }
+
+    .mid-cta-box::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(34, 178, 133, .08), transparent 60%);
+      pointer-events: none;
+    }
+
+    .mid-cta-box>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .mid-cta-box h3 {
+      font-size: clamp(20px, 3.5vw, 36px);
+      font-weight: 900;
+      letter-spacing: -.025em;
+      margin-bottom: 10px;
+    }
+
+    .mid-cta-box p {
+      font-size: 15px;
+      color: var(--mid);
+      max-width: 480px;
+      margin: 0 auto 24px;
+      line-height: 1.65;
+    }
+
+    /* HOW IT WORKS */
+    .steps-wrap {
+      position: relative;
+    }
+
+    .steps-line {
+      display: none;
+    }
+
+    @media(min-width:700px) {
+      .steps-line {
+        display: block;
+        position: absolute;
+        top: 27px;
+        left: calc(12.5% + 26px);
+        right: calc(12.5% + 26px);
+        height: 1px;
+        background: linear-gradient(90deg, rgba(34, 178, 133, .4), rgba(2, 133, 255, .3), rgba(34, 178, 133, .3), rgba(2, 133, 255, .4));
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 1.2s cubic-bezier(.16, 1, .3, 1) .3s;
+      }
+
+      .reveal.in .steps-line {
+        transform: scaleX(1);
+      }
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    @media(min-width:700px) {
+      .steps-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+      }
+    }
+
+    .step-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    @media(min-width:700px) {
+      .step-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+      }
+    }
+
+    .step-badge {
+      width: 54px;
+      height: 54px;
+      flex-shrink: 0;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      font-weight: 900;
+      position: relative;
+      z-index: 1;
+      transition: all .4s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .step-badge:hover {
+      transform: scale(1.1);
+    }
+
+    .sb-g {
+      background: rgba(34, 178, 133, .1);
+      border: 1px solid rgba(34, 178, 133, .3);
+      color: var(--g);
+      box-shadow: 0 0 22px rgba(34, 178, 133, .2);
+    }
+
+    .sb-b {
+      background: rgba(2, 133, 255, .1);
+      border: 1px solid rgba(2, 133, 255, .3);
+      color: var(--b);
+      box-shadow: 0 0 22px rgba(2, 133, 255, .2);
+    }
+
+    .sb-gb {
+      background: linear-gradient(135deg, rgba(34, 178, 133, .14), rgba(2, 133, 255, .14));
+      border: 1px solid rgba(34, 178, 133, .38);
+      box-shadow: 0 0 28px rgba(34, 178, 133, .22);
+    }
+
+    .step-title {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .step-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* FEE MATH */
+    .fee-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 22px;
+    }
+
+    @media(max-width:600px) {
+      .fee-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .fee-card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, .07);
+      border-radius: 18px;
+      padding: 26px 22px;
+    }
+
+    .fee-card.g {
+      border-color: rgba(34, 178, 133, .26);
+      background: rgba(34, 178, 133, .04);
+    }
+
+    .fee-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(255, 255, 255, .06);
+    }
+
+    .fee-card.g .fee-label {
+      color: var(--g);
+    }
+
+    .fee-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .04);
+      font-size: 13.5px;
+      color: var(--mid);
+    }
+
+    .fee-row:last-child {
+      border-bottom: none;
+    }
+
+    .fee-row strong {
+      color: #fff;
+      text-align: right;
+    }
+
+    .fee-row.bad strong {
+      color: rgba(220, 90, 90, .85);
+    }
+
+    .fee-row.good strong {
+      color: var(--g);
+    }
+
+    .fee-note {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.7;
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, .025);
+      border-radius: 13px;
+    }
+
+    .fee-note strong {
+      color: var(--mid);
+    }
+
+    /* RISK INLINE */
+    .risk-inline {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 20px;
+      padding: 18px 20px;
+      background: rgba(255, 255, 255, .03);
+      border: 1px solid rgba(34, 178, 133, .12);
+      border-radius: 16px;
+    }
+
+    @media(max-width:560px) {
+      .risk-inline {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .risk-inline-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      color: var(--mid);
+      font-size: 13.5px;
+      font-weight: 500;
+    }
+
+    .risk-inline-item svg {
+      flex-shrink: 0;
+      color: var(--g);
+    }
+
+    /* GUARANTEE */
+    .guarantee-sec {
+      background: rgba(34, 178, 133, .025);
+      border-top: 1px solid rgba(34, 178, 133, .11);
+      border-bottom: 1px solid rgba(34, 178, 133, .11);
+    }
+
+    .guar-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    @media(max-width:640px) {
+      .guar-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .guar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px;
+      background: rgba(17, 17, 24, .65);
+      border: 1px solid rgba(255, 255, 255, .05);
+      border-radius: 14px;
+    }
+
+    .guar-ico {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(34, 178, 133, .1);
+      border: 1px solid rgba(34, 178, 133, .2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--g);
+    }
+
+    .guar-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .guar-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* FAQ */
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .faq-item {
+      background: rgba(17, 17, 24, .72);
+      border: 1px solid rgba(255, 255, 255, .06);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color .3s;
+      cursor: pointer;
+    }
+
+    .faq-item:hover {
+      border-color: rgba(34, 178, 133, .22);
+      background: rgba(17, 17, 24, .88);
+    }
+
+    .faq-item.open {
+      border-color: rgba(34, 178, 133, .28);
+      background: rgba(17, 17, 24, .9);
+    }
+
+    .faq-q {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      padding: 18px 22px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .faq-chevron {
+      width: 20px;
+      height: 20px;
+      color: rgba(34, 178, 133, .5);
+      flex-shrink: 0;
+      transition: transform .35s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .faq-item.open .faq-chevron {
+      transform: rotate(180deg);
+      color: var(--g);
+    }
+
+    .faq-ans {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .45s cubic-bezier(.16, 1, .3, 1), opacity .3s ease;
+      opacity: 0;
+    }
+
+    .faq-item.open .faq-ans {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    .faq-ans-body {
+      padding: 0 22px 18px;
+      font-size: 13.5px;
+      color: var(--mid);
+      line-height: 1.78;
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      padding-top: 14px;
+    }
+
+    /* FORM */
+    .form-sec {
+      padding: 80px 20px 88px;
+      position: relative;
+    }
+
+    .form-sec::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 55%, rgba(34, 178, 133, .07) 0%, rgba(34, 178, 133, .02) 40%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .form-card {
+      max-width: 580px;
+      margin: 0 auto;
+      background: rgba(17, 17, 24, .94);
+      border: 1px solid rgba(34, 178, 133, .22);
+      border-radius: 26px;
+      padding: 44px 40px;
+      box-shadow: 0 32px 80px rgba(0, 0, 0, .45), 0 0 60px rgba(34, 178, 133, .06);
+      position: relative;
+      z-index: 1;
+    }
+
+    @media(max-width:560px) {
+      .form-card {
+        padding: 30px 20px;
+      }
+    }
+
+    .form-title {
+      font-size: clamp(20px, 3vw, 28px);
+      font-weight: 800;
+      letter-spacing: -.02em;
+      margin-bottom: 6px;
+      text-align: center;
+    }
+
+    .form-sub {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.65;
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .form-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    @media(max-width:500px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .form-lbl {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: .03em;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      background: rgba(255, 255, 255, .04);
+      border: 1px solid rgba(255, 255, 255, .1);
+      border-radius: 11px;
+      padding: 13px 15px;
+      font-size: 14px;
+      color: #fff;
+      font-family: inherit;
+      transition: border-color .2s, background .2s;
+      width: 100%;
+      outline: none;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: rgba(34, 178, 133, .4);
+      background: rgba(34, 178, 133, .04);
+    }
+
+    .form-select {
+      appearance: none;
+      cursor: pointer;
+    }
+
+    .form-textarea {
+      resize: none;
+      min-height: 80px;
+    }
+
+    .form-select option {
+      background: #111118;
+    }
+
+    .form-submit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      background: linear-gradient(135deg, #22B285, #18926C);
+      color: #fff;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 18px 28px;
+      border-radius: 14px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 24px rgba(34, 178, 133, .4);
+      transition: transform .2s, box-shadow .2s;
+      margin-top: 8px;
+      font-family: inherit;
+      animation: glow 3s ease-in-out infinite;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 40px rgba(34, 178, 133, .5);
+    }
+
+    .form-disc {
+      text-align: center;
+      font-size: 11.5px;
+      color: rgba(255, 255, 255, .23);
+      line-height: 1.65;
+      margin-top: 14px;
+    }
+
+    /* FINAL CTA */
+    .final-sec {
+      padding: 88px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-orb {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(34, 178, 133, .11), transparent 68%);
+      filter: blur(60px);
+      animation: orbFloat 6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .final-sec h2 {
+      font-size: clamp(26px, 4.5vw, 48px);
+      font-weight: 900;
+      letter-spacing: -.03em;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .final-sec p {
+      font-size: 16px;
+      color: var(--mid);
+      max-width: 520px;
+      margin: 0 auto 28px;
+      line-height: 1.68;
+      position: relative;
+      z-index: 1;
+    }
+
+    .urgency {
+      margin-top: 14px;
+      font-size: 13px;
+      color: var(--muted);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, .05);
+      padding: 44px 20px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      text-align: center;
+    }
+
+    .footer-legal {
+      font-size: 10.5px;
+      color: rgba(255, 255, 255, .18);
+      line-height: 1.82;
+      max-width: 700px;
+    }
+
+    .footer-copy {
+      font-size: 11px;
+      color: rgba(255, 255, 255, .15);
+    }
+
+    /* STICKY BAR */
+    .sticky {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      padding: 10px 14px calc(10px + env(safe-area-inset-bottom)) 14px;
+      background: rgba(10, 10, 15, .95);
+      backdrop-filter: blur(16px);
+      border-top: 1px solid rgba(34, 178, 133, .18);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      transform: translateY(130%);
+      transition: transform .35s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .sticky.show {
+      transform: translateY(0);
+    }
+
+    .sticky-row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .sticky-btn {
+      flex: 1;
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #22B285, #18926C);
+      color: #fff;
+      font-weight: 700;
+      font-size: 14.5px;
+      border-radius: 12px;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(34, 178, 133, .35);
+    }
+
+    .sticky-trust {
+      text-align: center;
+      font-size: 11px;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    /* NAMED LENDERS */
+    .lenders-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    @media(max-width:700px) {
+      .lenders-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .lender-card {
+      background: var(--card);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: 18px;
+      padding: 22px 18px;
+      text-align: center;
+      transition: all .3s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .lender-card:hover {
+      border-color: rgba(34, 178, 133, .28);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .3);
+    }
+
+    .lender-name {
+      font-weight: 800;
+      font-size: 14.5px;
+      margin-bottom: 6px;
+    }
+
+    .lender-sub {
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════════ -->
+  <header class="hdr">
+    <a class="hdr-logo" aria-label="Matrix Mastery Group">
+      <div class="logo-m">M</div>
+      Matrix Mastery Group
+    </a>
+  </header>
+
+
+  <!-- ═══ HERO ══════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="float-shape" style="top:8%;right:6%;animation:float 7s ease-in-out infinite">
+      <svg width="60" height="40" viewBox="0 0 60 40" fill="none">
+        <rect x="1" y="1" width="58" height="38" rx="6" stroke="#22B285" stroke-width="1.5" stroke-dasharray="4 4"
+          fill="rgba(34,178,133,.04)" />
+      </svg>
+    </div>
+    <div class="float-shape" style="top:25%;left:5%;animation:float 9s ease-in-out infinite reverse">
+      <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+        <circle cx="22" cy="22" r="21" stroke="#0285FF" stroke-width="1.5" stroke-dasharray="4 4"
+          fill="rgba(2,133,255,.04)" />
+      </svg>
+    </div>
+    <div class="float-shape" style="bottom:15%;right:12%;animation:float 11s ease-in-out infinite">
+      <svg width="48" height="42" viewBox="0 0 48 42" fill="none">
+        <polygon points="24,3 45,39 3,39" stroke="#22B285" stroke-width="1.5" fill="rgba(34,178,133,.03)" />
+      </svg>
+    </div>
+    <div class="spin-ring" style="width:340px;height:340px;top:50%;left:15%;transform:translateY(-50%)"></div>
+    <div class="spin-ring" style="width:200px;height:200px;bottom:10%;right:8%"></div>
+
+    <div class="hero-inner">
+      <div class="badge fade-u0">
+        <div class="badge-dot"></div>
+        No collateral &middot; No home equity &middot; Capital ready in 30&ndash;60 days
+      </div>
+
+      <div class="hero-offer fade-u0">No hard money interest eating your margin. <strong>$50K&ndash;$300K at 0% intro
+          APR.</strong></div>
+
+      <h1 class="fade-u1">The deal closes whether your capital is ready or not. <span class="shimmer-text">Here's how to
+          have it ready.</span></h1>
+
+      <p class="hero-sub fade-u2">Hard money at 14% costs you margin. A HELOC risks your home. Business credit lines
+        from Chase, Amex, and US Bank sit at 0% intro APR with no collateral against your property, accessible before
+        the deal arrives. 30 to 60 days from the qualification call.</p>
+
+      <div class="trust-row fade-u2">
+        <span class="tp-stars">
+          <svg viewBox="0 0 12 12">
+            <path d="M6 0l1.545 3.09 3.455.5-2.5 2.44.59 3.47L6 7.905l-3.09 1.595.59-3.47L1 3.59l3.455-.5z" />
+          </svg>
+          <svg viewBox="0 0 12 12">
+            <path d="M6 0l1.545 3.09 3.455.5-2.5 2.44.59 3.47L6 7.905l-3.09 1.595.59-3.47L1 3.59l3.455-.5z" />
+          </svg>
+          <svg viewBox="0 0 12 12">
+            <path d="M6 0l1.545 3.09 3.455.5-2.5 2.44.59 3.47L6 7.905l-3.09 1.595.59-3.47L1 3.59l3.455-.5z" />
+          </svg>
+          <svg viewBox="0 0 12 12">
+            <path d="M6 0l1.545 3.09 3.455.5-2.5 2.44.59 3.47L6 7.905l-3.09 1.595.59-3.47L1 3.59l3.455-.5z" />
+          </svg>
+          <svg viewBox="0 0 12 12">
+            <path d="M6 0l1.545 3.09 3.455.5-2.5 2.44.59 3.47L6 7.905l-3.09 1.595.59-3.47L1 3.59l3.455-.5z" />
+          </svg>
+        </span>
+        <strong>4.7</strong> on Trustpilot
+        <span class="t-sep">&middot;</span>
+        <strong>800+</strong> businesses funded
+      </div>
+
+      <div class="fade-u3">
+        <a href="#qualifier-form" class="btn">
+          See what my profile qualifies for
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+        <div class="cta-micro">No payment until after the file review.</div>
+      </div>
+
+      <div class="path-row fade-u3">
+        <span class="path-step"><strong>2-min qualifier</strong></span>
+        <span class="path-arrow">&#8594;</span>
+        <span class="path-step"><strong>Same-day scheduling</strong></span>
+      </div>
+
+      <div class="fade-u3">
+        <span class="qualifies-note">Qualifies if: <strong>720+ personal credit score</strong> + <strong>active business
+            entity</strong> + <strong>a deal that needs capital</strong></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ STATS BAR ══════════════════════════════════════════════ -->
+  <div class="stats-bar">
+    <div class="stats-grid reveal">
+      <div class="stat-box rs">
+        <div class="stat-n">800+</div>
+        <div class="stat-l">Businesses funded</div>
+      </div>
+      <div class="stat-box rs">
+        <div class="stat-n">$200M+</div>
+        <div class="stat-l">Capital placed</div>
+      </div>
+      <div class="stat-box rs">
+        <div class="stat-n white">30&ndash;60</div>
+        <div class="stat-l">Days to capital</div>
+      </div>
+      <div class="stat-box rs">
+        <div class="stat-n">Up to $300K</div>
+        <div class="stat-l">Funding range</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══ WHO THIS IS FOR ════════════════════════════════════════ -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">WHO THIS IS FOR</span>
+        <h2 class="sec-title">Three things that need to be true.</h2>
+        <p class="sec-sub">Below the threshold, we tell you in the first five minutes of the call. Before any fee is
+          discussed.</p>
+      </div>
+
+      <div class="qualifier-grid reveal">
+        <div class="qualifier-card dark-card rs"
+          style="background:rgba(34,178,133,.04);border-color:rgba(34,178,133,.18)">
+          <div class="left-bar" style="background:linear-gradient(180deg,var(--g),var(--gd))"></div>
+          <div class="qc-inner">
+            <div class="qc-icon"
+              style="background:rgba(34,178,133,.1);border:1px solid rgba(34,178,133,.2);color:var(--g)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div>
+              <div class="qc-title">720+ Credit Score</div>
+              <div class="qc-sub">Personal credit 720 or higher. That is the lender floor. Some products in MMG's
+                sequence require 750+. We'll tell you the exact threshold on the call.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="qualifier-card dark-card rs"
+          style="background:rgba(2,133,255,.04);border-color:rgba(2,133,255,.18)">
+          <div class="left-bar" style="background:linear-gradient(180deg,var(--b),#0268cc)"></div>
+          <div class="qc-inner">
+            <div class="qc-icon"
+              style="background:rgba(2,133,255,.1);border:1px solid rgba(2,133,255,.2);color:var(--b)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="9" width="18" height="13" />
+                <path d="M3 9l9-7 9 7" />
+                <line x1="9" y1="22" x2="9" y2="12" />
+                <line x1="15" y1="22" x2="15" y2="12" />
+              </svg>
+            </div>
+            <div>
+              <div class="qc-title">Active Business Entity</div>
+              <div class="qc-sub">An LLC or corporation registered in the US. The entity separates your personal
+                liability from the credit lines and gives lenders a structure to underwrite against.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="qualifier-card dark-card rs"
+          style="background:rgba(34,178,133,.04);border-color:rgba(34,178,133,.18)">
+          <div class="left-bar" style="background:linear-gradient(180deg,var(--g),var(--gd))"></div>
+          <div class="qc-inner">
+            <div class="qc-icon"
+              style="background:rgba(34,178,133,.1);border:1px solid rgba(34,178,133,.2);color:var(--g)">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+              </svg>
+            </div>
+            <div>
+              <div class="qc-title">A Deal That Needs Capital</div>
+              <div class="qc-sub">A construction draw, a down payment, a deal that closes in 30&ndash;60 days. Not
+                abstract access. A specific transaction. Business credit lines do not appear on personal credit reports
+                in most cases and do not interfere with existing HELOC applications.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══ CASE STUDIES ══════════════════════════════════════════ -->
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">CASE STUDIES</span>
+        <h2 class="sec-title">Real results. <span class="shimmer-text">Named outcomes.</span></h2>
+        <p class="sec-sub">Your projection comes from your actual file, not what someone else qualified for.</p>
+      </div>
+
+      <div class="case-grid reveal">
+        <!-- Card 1 -->
+        <div class="case-card rs" style="--orb-color:rgba(34,178,133,.08)">
+          <div class="card-orb"></div>
+          <div class="case-amount">
+            <div class="case-amount-num" style="color:var(--g)">$277,300</div>
+            <div class="case-amount-label">0% Intro APR Capital &middot; 2 rounds</div>
+          </div>
+          <div class="case-breakdown">
+            <div class="case-round" style="background:rgba(34,178,133,.08);border:1px solid rgba(34,178,133,.18)">
+              <div class="case-round-title">Round 1</div>
+              <div class="case-round-amt" style="color:var(--g)">$142,000</div>
+            </div>
+            <div class="case-round" style="background:rgba(2,133,255,.08);border:1px solid rgba(2,133,255,.18)">
+              <div class="case-round-title">Round 2</div>
+              <div class="case-round-amt" style="color:var(--b)">$135,300</div>
+            </div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-track">
+              <div class="progress-fill" style="--w:92%;background:linear-gradient(90deg,var(--g),var(--b))"></div>
+            </div>
+          </div>
+          <div class="case-video">
+            <div class="case-video-placeholder">
+              <div class="play-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                  style="color:var(--g);margin-left:3px">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <div style="font-size:11px;color:var(--muted)">Video testimonial &mdash; embed Bryan Clapper's video here
+              </div>
+            </div>
+          </div>
+          <div class="case-quote">"Had 2+ years in business and solid documentation. After multiple rounds, we secured
+            $277,300 in 0% intro APR credit lines."</div>
+          <div class="case-person">
+            <div class="case-avatar" style="background:rgba(2,133,255,.15);color:var(--b)">BC</div>
+            <div>
+              <div class="case-name">Bryan Clapper</div>
+              <div class="case-meta">Business Owner &middot; 800+ Credit</div>
+            </div>
+          </div>
+          <div class="ftc">Results not typical. Individual results will vary.</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="case-card rs" style="--orb-color:rgba(2,133,255,.08)">
+          <div class="card-orb"></div>
+          <div class="case-amount">
+            <div class="case-amount-num" style="color:var(--b)">$170,000</div>
+            <div class="case-amount-label">0% Intro APR &middot; Profile maintained for round 2</div>
+          </div>
+          <div class="case-breakdown">
+            <div class="case-round" style="background:rgba(34,178,133,.08);border:1px solid rgba(34,178,133,.18)">
+              <div class="case-round-title">0% Lines</div>
+              <div class="case-round-amt" style="color:var(--g)">$170,000</div>
+            </div>
+            <div class="case-round" style="background:rgba(2,133,255,.08);border:1px solid rgba(2,133,255,.18)">
+              <div class="case-round-title">Year 2</div>
+              <div class="case-round-amt" style="color:var(--b)">Renewal ready</div>
+            </div>
+          </div>
+          <div class="progress-wrap">
+            <div class="progress-track">
+              <div class="progress-fill" style="--w:68%;background:linear-gradient(90deg,var(--b),var(--g))"></div>
+            </div>
+          </div>
+          <div class="case-video">
+            <div class="case-video-placeholder">
+              <div class="play-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"
+                  style="color:var(--b);margin-left:3px">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <div style="font-size:11px;color:var(--muted)">Video testimonial &mdash; embed Dylan Moore's video here
+              </div>
+            </div>
+          </div>
+          <div class="case-quote">"Came in with an 800+ credit profile and 3 business entities. After multiple rounds,
+            we installed $170K at 0% and the profile was maintained for the renewal cycle."</div>
+          <div class="case-person">
+            <div class="case-avatar" style="background:rgba(34,178,133,.15);color:var(--g)">DM</div>
+            <div>
+              <div class="case-name">Dylan Moore</div>
+              <div class="case-meta">3 Business Entities &middot; 800+ Credit</div>
+            </div>
+          </div>
+          <div class="ftc">Results not typical. Individual results will vary.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ MID-PAGE CTA ══════════════════════════════════════════ -->
+  <section class="sec">
+    <div class="wrap-sm">
+      <div class="mid-cta-box reveal">
+        <h3>See your actual approval range before you commit to anything.</h3>
+        <p>The qualification call is free. We pull your credit file on screen, name the specific lenders your profile
+          qualifies for, and project your approval range. Before you pay a dollar.</p>
+        <a href="#qualifier-form" class="btn btn-sm">
+          Book the free credit file review
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ NAMED LENDERS ═════════════════════════════════════════ -->
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">THE LENDERS</span>
+        <h2 class="sec-title">Named before the call ends. Not after you pay.</h2>
+        <p class="sec-sub">Chase Ink. Amex Blue Business Cash. US Bank Business Leverage. Wells Fargo Business. These
+          are the specific products in our sequencing process. Knowing the lender names before you sign is standard
+          here.</p>
+      </div>
+
+      <div class="lenders-grid reveal">
+        <div class="lender-card rs">
+          <div class="lender-name">Chase Ink</div>
+          <div class="lender-sub">High-limit business credit from Chase's commercial product line. One of the primary
+            lenders in MMG's sequencing stack.</div>
+        </div>
+        <div class="lender-card rs">
+          <div class="lender-name">Amex Blue Business Cash</div>
+          <div class="lender-sub">Established 0% intro period. Part of Amex's small business credit suite.</div>
+        </div>
+        <div class="lender-card rs">
+          <div class="lender-name">US Bank Business Leverage</div>
+          <div class="lender-sub">Strong approval rates for qualified business profiles.</div>
+        </div>
+        <div class="lender-card rs">
+          <div class="lender-name">Wells Fargo Business</div>
+          <div class="lender-sub">Added for portfolio diversification and to complete the capital stack.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ HOW IT WORKS ══════════════════════════════════════════ -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">HOW IT WORKS</span>
+        <h2 class="sec-title">Before you pay us anything, <span class="shimmer-text">you see your actual numbers.</span>
+        </h2>
+        <p class="sec-sub">The qualification call is not a sales call. Here is exactly what the 30 minutes produces.</p>
+      </div>
+
+      <div class="steps-wrap reveal">
+        <div class="steps-line"></div>
+        <div class="steps-grid">
+          <div class="step-item rs">
+            <div class="step-badge sb-g">1</div>
+            <div>
+              <div class="step-title">Fill the 2-minute qualifier</div>
+              <div class="step-desc">Credit score range, business entity, and what deal you need capital for. Call is
+                scheduled within 24 hours.</div>
+            </div>
+          </div>
+          <div class="step-item rs">
+            <div class="step-badge sb-b">2</div>
+            <div>
+              <div class="step-title">We pull your actual credit file</div>
+              <div class="step-desc">Experian, TransUnion on a shared screen. Your actual profile, not a summary or
+                estimate.</div>
+            </div>
+          </div>
+          <div class="step-item rs">
+            <div class="step-badge sb-g">3</div>
+            <div>
+              <div class="step-title">Named lenders and projected range</div>
+              <div class="step-desc">Specific products for your profile. Specific approval estimates. Built from your
+                actual file, not a template for a 750-score applicant.</div>
+            </div>
+          </div>
+          <div class="step-item rs">
+            <div class="step-badge sb-gb"><span class="shimmer-text">4</span></div>
+            <div>
+              <div class="step-title">You decide. Before any fee.</div>
+              <div class="step-desc">No commitment, no payment until you have seen the projection and said yes. The call
+                produces value regardless of whether you move forward.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══ FEE MATH ══════════════════════════════════════════════ -->
+  <section class="sec sec-alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">THE MATH</span>
+        <h2 class="sec-title">Our flat fee vs. hard money at 14%. Run the math on your next deal.</h2>
+        <p class="sec-sub">Your margin depends on the cost of capital. Here is what each option actually costs on a
+          $100K deployment.</p>
+      </div>
+
+      <div class="fee-grid reveal">
+        <div class="fee-card rs">
+          <div class="fee-label">Hard money on $100K at 14%</div>
+          <div class="fee-row bad"><span>12-month interest cost</span><strong>$14,000</strong></div>
+          <div class="fee-row bad"><span>Collateral required</span><strong>Yes, property or deal asset</strong></div>
+          <div class="fee-row bad"><span>Approval timeline</span><strong>3&ndash;7 days (but interest runs from day
+              one)</strong></div>
+          <div class="fee-row bad"><span>After year one</span><strong>Continues at 14%+</strong></div>
+        </div>
+        <div class="fee-card g rs">
+          <div class="fee-label">Our flat fee for $100K program</div>
+          <div class="fee-row good"><span>Program fee (one-time)</span><strong>[CONFIRM WITH NATE]
+            </strong></div>
+          <div class="fee-row good"><span>Collateral required</span><strong>None</strong></div>
+          <div class="fee-row good"><span>Timeline from call</span><strong>30&ndash;60 days</strong></div>
+          <div class="fee-row good"><span>Year two renewal</span><strong>$2,500, no new program fee</strong></div>
+        </div>
+      </div>
+
+      <div class="fee-note reveal">
+        <strong>The math:</strong> Hard money at 14% on $100K costs $14,000 in year-one interest alone, plus collateral
+        against the deal or your property. The program fee is $8,000, paid once. On a $150K line held for 18 months at
+        15%, the interest alone is $33,750. The fee covers itself in year one.
+      </div>
+
+      <div class="risk-inline reveal">
+        <div class="risk-inline-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          File review before payment
+        </div>
+        <div class="risk-inline-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          No collateral required
+        </div>
+        <div class="risk-inline-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Work-until-done guarantee
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ GUARANTEE ═════════════════════════════════════════════ -->
+  <section class="sec guarantee-sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <span class="sec-label">THE GUARANTEE</span>
+        <h2 class="sec-title">If approvals fall short, we keep working your file at no additional fee.</h2>
+        <p class="sec-sub">Every risk named here is transferred before you sign anything.</p>
+      </div>
+
+      <div class="guar-grid reveal">
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">No home equity pledged</div>
+            <div class="guar-desc">Business credit through this process does not require pledging your primary residence
+              or any personal property. Your equity stays where it is.</div>
+          </div>
+        </div>
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <line x1="8" y1="21" x2="16" y2="21" />
+              <line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">File review before payment</div>
+            <div class="guar-desc">You see your projected lender list and approval range on screen before we see your
+              money.</div>
+          </div>
+        </div>
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+              <line x1="7" y1="7" x2="7.01" y2="7" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">Flat fee disclosed upfront</div>
+            <div class="guar-desc">No percentage of funded amount taken after approval. The fee quoted before signing is
+              the total fee.</div>
+          </div>
+        </div>
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="1 4 1 10 7 10" />
+              <path d="M3.51 15a9 9 0 1 0 .49-4" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">Work-until-done</div>
+            <div class="guar-desc">If the first applications fall short, we optimize the file and continue at no
+              additional charge.</div>
+          </div>
+        </div>
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">CROA 3-day cooling-off</div>
+            <div class="guar-desc">Three business days to cancel after signing, by law. We tell you this before you
+              sign, not after.</div>
+          </div>
+        </div>
+        <div class="guar-item rs">
+          <div class="guar-ico">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+          </div>
+          <div>
+            <div class="guar-title">The call produces value regardless</div>
+            <div class="guar-desc">You leave with a specific lender list and approval projection based on your actual
+              file, whether you move forward or not.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FAQ ═══════════════════════════════════════════════════ -->
+  <section class="sec">
+    <div class="wrap-sm">
+      <div class="sec-head reveal">
+        <span class="sec-label">FAQ</span>
+        <h2 class="sec-title">Common questions.</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item open rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            Will this show up on my personal credit or interfere with a future HELOC?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">Business credit lines structured through this process do not appear on personal
+              credit reports in most cases. They do not interfere with personal mortgage refinancing or HELOC
+              applications for most clients. We'll confirm the specific answer for your file on the qualification call,
+              before any fee is discussed.</div>
+          </div>
+        </div>
+
+        <div class="faq-item open rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            How much can I realistically access for a deal?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">The projected range comes from your actual credit file on the call, not a general
+              estimate. Typical range across qualified profiles is $50K&ndash;$250K in a first round, depending on
+              credit score, utilization, and entity setup. Your specific number will be projected on the call before any
+              payment.</div>
+          </div>
+        </div>
+
+        <div class="faq-item rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            My deal closes in 45 days. Is that realistic?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">30&ndash;60 days from the qualification call is the typical timeline. If your
+              close date is tighter, we'll tell you honestly on the call whether the timeline works for your situation,
+              and whether we should proceed, before any fee is paid.</div>
+          </div>
+        </div>
+
+        <div class="faq-item rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            What happens when the 0% intro period expires?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">MMG builds the rotation plan before the first round closes. The 0% period runs
+              9&ndash;21 months per lender. Before expiry, we sequence new applications to keep the structure active.
+              Year two renewal runs at $2,500. The system is designed to keep working past the initial intro period.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            How is this different from hard money?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">There are three structural differences. First, no collateral against the deal or
+              your personal property. Second, no interest clock running from the day funds are deployed. Third, the
+              capital sits in accessible lines you draw against when a deal needs it, rather than a single lender
+              advancing against a specific transaction at 14%.</div>
+          </div>
+        </div>
+
+        <div class="faq-item rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            What if I don't get the amount the deal needs?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">If the first round falls short, we keep working the file at no additional fee.
+              Profile adjustments, re-sequencing, additional entity setups. All included until the target is reached or
+              we've run out of viable paths, whichever comes first.</div>
+          </div>
+        </div>
+
+        <div class="faq-item rs" onclick="faqToggle(this)">
+          <div class="faq-q">
+            Do I need a specific LLC set up for this?
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </div>
+          <div class="faq-ans">
+            <div class="faq-ans-body">You need an active business entity registered in the US. Multiple LLCs for
+              different deals can expand the available stack. We'll map your entity structure to the lender sequence on
+              the call.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+
+  <!-- ═══ FORM ═══════════════════════════════════════════════════ -->
+  <section class="form-sec" id="qualifier-form">
+    <div class="form-card reveal">
+      <div class="form-title">Book your free credit file review</div>
+      <div class="form-sub">2 minutes to qualify. We pull your actual file on screen. You see the lenders and the
+        numbers before you pay us anything.</div>
+
+      <form class="form-fields" onsubmit="handleSubmit(event)">
+        <div class="two-col">
+          <div class="form-group">
+            <label class="form-lbl">First name</label>
+            <input type="text" class="form-input" placeholder="Mark" required>
+          </div>
+          <div class="form-group">
+            <label class="form-lbl">Last name</label>
+            <input type="text" class="form-input" placeholder="Bates" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-lbl">Email address</label>
+          <input type="email" class="form-input" placeholder="mark@yourbusiness.com" required>
+        </div>
+        <div class="form-group">
+          <label class="form-lbl">Phone number</label>
+          <input type="tel" class="form-input" placeholder="(555) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label class="form-lbl">Personal credit score range</label>
+          <select class="form-select" required>
+            <option value="" disabled selected>Select your range</option>
+            <option>Below 720 &mdash; may need credit building first</option>
+            <option>720&ndash;749</option>
+            <option>750&ndash;779</option>
+            <option>780+</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-lbl">Active business entity?</label>
+          <select class="form-select" required>
+            <option value="" disabled selected>Select one</option>
+            <option>Yes &mdash; LLC or corporation registered in the US</option>
+            <option>No &mdash; sole prop or not yet formed</option>
+            <option>In the process of forming one</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-lbl">Brief description of your capital need</label>
+          <textarea class="form-textarea" rows="3"
+            placeholder="e.g. House flip in Atlanta. Need $80K for the down payment. Hard money at 14% is eating my margin."></textarea>
+        </div>
+        <button type="submit" class="form-submit">
+          See what my profile qualifies for
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <polyline points="12 5 19 12 12 19" />
+          </svg>
+        </button>
+      </form>
+
+      <div class="form-disc">No payment required until after the file review. Matrix Mastery Group is a financial
+        education and consulting company. Not a lender, bank, or financial advisor. Results vary. 0% = introductory APR,
+        typically 9&ndash;21 months per lender.</div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FINAL CTA ════════════════════════════════════════════ -->
+  <section class="final-sec">
+    <div class="cta-orb"></div>
+    <div class="wrap-sm">
+      <h2>The next deal doesn't have to wait. <span class="shimmer-text">Start with the credit file.</span></h2>
+      <p>Free 2-minute qualifier. We review your actual file on screen. You leave with a specific lender list and
+        approval projection before you commit to anything.</p>
+      <a href="#qualifier-form" class="btn">
+        See what my profile qualifies for
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <line x1="5" y1="12" x2="19" y2="12" />
+          <polyline points="12 5 19 12 12 19" />
+        </svg>
+      </a>
+      <div class="cta-micro">No payment until after the file review. If approvals fall short, we keep working at no
+        additional fee.</div>
+      <div class="urgency">Capital accessible in 30&ndash;60 days from the qualification call.</div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <a class="hdr-logo" style="pointer-events:none">
+        <div class="logo-m">M</div>
+        Matrix Mastery Group
+      </a>
+      <p class="footer-legal">Matrix Mastery Group is a financial education and consulting company. We are not a lender,
+        bank, or financial advisor. Results vary. Past results do not guarantee future outcomes. 0% refers to
+        introductory APR, typically 9&ndash;21 months per lender. Individual results will vary based on credit profile,
+        entity structure, and lender decisions outside of MMG's control. All funding projections are estimates and are
+        not guarantees of approval.</p>
+      <p class="footer-copy">&copy; 2026 Matrix Mastery Group. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <!-- ═══ STICKY BAR ════════════════════════════════════════════ -->
+  <div class="sticky" id="stickyBar">
+    <div class="sticky-row">
+      <a href="#qualifier-form" class="sticky-btn">Book the free credit file review</a>
+    </div>
+    <div class="sticky-trust">4.7 stars on Trustpilot &middot; 800+ businesses funded</div>
+  </div>
+
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); revealObs.unobserve(e.target); } });
+    }, { threshold: 0.08 });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    const progressObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.progress-fill').forEach(bar => {
+            const w = getComputedStyle(bar).getPropertyValue('--w') || '80%';
+            setTimeout(() => { bar.style.width = w; }, 300);
+          });
+          progressObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    document.querySelectorAll('.case-card').forEach(c => progressObs.observe(c));
+
+    function faqToggle(el) { el.classList.toggle('open'); }
+
+    const heroEl = document.querySelector('.hero');
+    const bar = document.getElementById('stickyBar');
+    if (heroEl && bar) {
+      new IntersectionObserver(entries => {
+        bar.classList.toggle('show', !entries[0].isIntersecting);
+      }, { threshold: 0.05 }).observe(heroEl);
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert('Connect to booking system before launch (Calendly, HubSpot, or custom form handler).');
+    }
+  </script>
+
+</body>
+
+</html>
